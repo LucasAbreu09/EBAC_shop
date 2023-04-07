@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #dddbdb;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    padding: 16px 0;
+    background-color: rgb(63, 63, 217);
+    margin-bottom: 56px;
+}
+
+.menu > ul li{
+    font-weight: bolder;
+    list-style: none;
+    float: left;
+    padding: 16px;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+header h1{
+    font-style: italic;
+    color: white;
+}
+
+.sobre{
+    display: flex;
+}
+
+.sobre img{
+    height: 400px;
+    width: 50%;
+    margin-right: 60px;
+}
+
+.sobre h2,
+.produtos h2{
+    font-size: 2em;
+    padding-bottom: 40px;
+    color: rgb(53, 53, 253);
+    border-bottom: 2px solid rgb(53, 53, 253);
+}
+
+.sobre p{
+    margin-top: 70px;
+}
+
+.produtos{
+    margin-top: 100px;
+    height: 60vh;
+}
+
+.card li img{
+    height: 200px;
+    width: 100%;
+}
+
+.card ul{
+    display: grid;
+    grid-template-columns: repeat(4, 25.8%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.card h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.card p{
+    margin: 16px 0;
+}
+
+.card ul li{
+    margin-top: 36px;
+    list-style: none;
+    max-width: 250px;
+}
+
+.card ul li button{
+    cursor: pointer;
+    width: 100%;
+    padding: 6px 15%;
+    background-color: rgb(53, 53, 253);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5%;
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        max-width:80%;
+    }
+
+    .menu > ul li{
+        list-style: none;
+        float: left;
+        padding: 5px 16px;
+    }
+    
+    .sobre{
+        display: block;
+    }
+    
+    .sobre img{
+        height: 5%;
+        width: 100%;
+    }
+
+    .sobre h2,
+    .produtos h2{
+    font-size: 1.5em;
+    padding: 20px;
+    }
+
+    .card ul{
+        display: block;
+    }
+
+    .card ul li{
+        max-width: 640px;
+    }
+
+    .card li img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    .container{
+        max-width:90%;
+    }
+
+    .sobre{
+        display: block;
+    }
+
+    .sobre img{
+        height: 5%;
+        width: 100%;
+    }
+
+    .sobre p{
+        font-size: 1.5em;
+    }
+
+    .card ul{
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 3%;
+        row-gap: 20%;
+    }
+
+    .card ul li{
+        max-width: 640px;
+    }
+
+    .card li img{
+        height: 100%;
+        width: 100%;
+    }
+}
